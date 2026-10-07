@@ -1,6 +1,7 @@
 ﻿#include <stdio.h>
 #include <math.h>
 #include <locale.h>
+#include <stdlib.h>  
 #define P 2.6         
 
 int main()
