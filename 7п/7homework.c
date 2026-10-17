@@ -21,7 +21,7 @@ int main()
     case 11: printf("XI\n");   break;
     case 12: printf("XII\n");  break;
     default: 
-        printf("Ошибка: число вне диапазона!\n"); 
+        printf("Ошибка: введено число вне диапазона\n"); 
         break;
     }
     return 0;
