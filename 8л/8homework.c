@@ -13,4 +13,4 @@ int main()
     }
     printf("Результат: %f\n", proiz);
     return 0;
-    }
+}
