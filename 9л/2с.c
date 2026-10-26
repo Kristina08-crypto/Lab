@@ -1,13 +1,10 @@
 ﻿#include <stdio.h>
 #include <locale.h>
-
 int main()
 {
     setlocale(LC_ALL, "Russian");
-
     int n, a, sum1, sum2, count, i;
     char c;
-
     do
     {
         printf("Введите четное количество цифр в числе: ");
