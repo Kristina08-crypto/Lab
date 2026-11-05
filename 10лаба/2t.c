@@ -1,4 +1,4 @@
-#include <stdio.h>
+п»ї#include <stdio.h>
 #include <math.h>
 #include <locale.h>
 double sin_n(double x, int N) {
@@ -26,18 +26,18 @@ int main() {
     double x;
     int N;
     double eps;
-    printf("Введите значение x (в радианах): ");
+    printf("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ x (РІ СЂР°РґРёР°РЅР°С…): ");
     scanf_s("%lf", &x);
-    printf("Введите количество членов ряда N: ");
+    printf("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‡Р»РµРЅРѕРІ СЂСЏРґР° N: ");
     scanf_s("%d", &N);
-    printf("Введите точность вычислений eps (например, 0.0001): ");
+    printf("Р’РІРµРґРёС‚Рµ С‚РѕС‡РЅРѕСЃС‚СЊ РІС‹С‡РёСЃР»РµРЅРёР№ eps (РЅР°РїСЂРёРјРµСЂ, 0.0001): ");
     scanf_s("%lf", &eps);
     double res_standart = sin(x);
     double res_n = sin_n(x, N);
     double res_eps = sin_eps(x, eps);
-    printf("\n=== Результаты вычислений ===\n");
-    printf("1) Стандартная функция sin(x):  %.10f\n", res_standart);
-    printf("2) Через заданное число N:       %.10f (Разница: %.10f)\n", res_n, fabs(res_standart - res_n));
-    printf("3) Через заданную точность eps:  %.10f (Разница: %.10f)\n", res_eps, fabs(res_standart - res_eps));
+    printf("\n=== Р РµР·СѓР»СЊС‚Р°С‚С‹ РІС‹С‡РёСЃР»РµРЅРёР№ ===\n");
+    printf("1) РЎС‚Р°РЅРґР°СЂС‚РЅР°СЏ С„СѓРЅРєС†РёСЏ sin(x):  %.10f\n", res_standart);
+    printf("2) Р§РµСЂРµР· Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ N:       %.10f (Р Р°Р·РЅРёС†Р°: %.10f)\n", res_n, fabs(res_standart - res_n));
+    printf("3) Р§РµСЂРµР· Р·Р°РґР°РЅРЅСѓСЋ С‚РѕС‡РЅРѕСЃС‚СЊ eps:  %.10f (Р Р°Р·РЅРёС†Р°: %.10f)\n", res_eps, fabs(res_standart - res_eps));
     return 0;
 }
