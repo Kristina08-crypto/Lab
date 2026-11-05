@@ -19,7 +19,7 @@ void narisovat_trapetsiyu(int height, int top) {
     }
 }
 int main() {
-    setlocale(LC_ALL, "RU_ru");
+    setlocale(LC_ALL, "Russian");
     int vibor;
     float a, b, h, S;
     int height, top;
